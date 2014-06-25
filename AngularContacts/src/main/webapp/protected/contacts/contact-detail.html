@@ -1,0 +1,17 @@
+<b>Contact Detail HTML</b>
+<div>
+	<form name="form" novalidate>
+		<label for="id">Id</label>
+		<input id="id" ng-model="contact.id" class="form-control" placeholder="Read Only">
+		<label for="name">Name</label>
+		<input id="name" ng-model="contact.name" class="form-control" required ng-minlength=5>
+		<label for="email">Email</label>
+		<input id="email" ng-model="contact.email" class="form-control" >
+		<label for="phoneNumber">Phone</label>
+		<input id="phoneNumber" ng-model="contact.phoneNumber" class="form-control">
+		<p>
+		<a class="btn btn-primary btn-lg" role="button" ng-click="deleteContact();">Delete</a>
+		<a class="btn btn-primary btn-lg" role="button" ng-click="updateContact();">Update</a>
+		</p>
+	</form>
+</div>
